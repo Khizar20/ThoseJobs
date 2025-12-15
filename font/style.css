@@ -1,0 +1,139 @@
+/* Improved webfont setup for Formular family with proper weights and fallbacks */
+
+/* Base Latin letters and digits only to force punctuation to fall back */
+/* Letters: A-Z (U+0041-005A), a-z (U+0061-007A); Digits: 0-9 (U+0030-0039); Space: U+0020 */
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular ExtraLight'), url('formular-extralight-trial.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular ExtraLight Italic'), url('formular-extralightitalic-trial.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Light'), url('formular-light-trial.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Light Italic'), url('formular-lightitalic-trial.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Regular'), url('formular-regular-trial.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Italic'), url('formular-regularitalic-trial.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Medium'), url('formular-medium-trial.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Medium Italic'), url('formular-mediumitalic-trial.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Bold'), url('formular-bold-trial.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Bold Italic'), url('formular-bolditalic-trial.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Ultra'), url('formular-ultra-trial.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Ultra Italic'), url('formular-ultra-italic-trial.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Black'), url('formular-black-trial.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: local('Formular Black Italic'), url('formular-blackitalic-trial.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0020, U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+/* Optional monospace variant if ever needed */
+@font-face {
+  font-family: 'Formular Mono';
+  src: local('Formular Mono Regular'), url('formular-mono-trial.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
