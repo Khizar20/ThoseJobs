@@ -33,6 +33,7 @@ import CreateLiveRequest from "./pages/CreateLiveRequest";
 import UserUrgentRequests from "./pages/UserUrgentRequests";
 import ProviderNotifications from "./pages/ProviderNotifications";
 import TestLocationAutocomplete from "./pages/TestLocationAutocomplete";
+import EmailVerificationSuccess from "./pages/EmailVerificationSuccess";
 
 const queryClient = new QueryClient();
 
@@ -91,9 +92,9 @@ function AnimatedRoutes() {
               console.error('Error updating email confirmation:', updateError);
             }
             
-            // Redirect to login page with success message and role
-            const roleParam = userProfile?.role ? `?role=${userProfile.role}&verified=true` : '?verified=true';
-            window.location.href = `/login${roleParam}`;
+            // Redirect to success page with role parameter
+            const roleParam = userProfile?.role || 'requester';
+            window.location.href = `/email-verification-success?role=${roleParam}`;
           }
         } catch (error) {
           console.error('Error handling email verification:', error);
@@ -128,6 +129,7 @@ function AnimatedRoutes() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<UserRegister />} />
           <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/email-verification-success" element={<EmailVerificationSuccess />} />
           
           {/* Admin Routes */}
           <Route path="/admin-login" element={<AdminLogin />} />

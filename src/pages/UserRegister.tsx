@@ -126,6 +126,10 @@ const UserRegister = () => {
         authError = null;
       } else {
         // Create new user in auth
+        // Set redirectTo to point to the email verification success page
+        // This will work with any domain (localhost or deployed)
+        const redirectUrl = `${window.location.origin}/email-verification-success?role=${userRole}`;
+        
         const signUpResult = await supabase.auth.signUp({
           email: formData.email,
           password: formData.password,
@@ -133,7 +137,8 @@ const UserRegister = () => {
             data: {
               name: formData.name,
               phone: formData.phone
-            }
+            },
+            emailRedirectTo: redirectUrl
           }
         });
         authData = signUpResult.data;
