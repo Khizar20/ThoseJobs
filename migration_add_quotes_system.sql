@@ -86,7 +86,7 @@ BEGIN
         INSERT INTO job_assignments (job_id, worker_id, status)
         VALUES (NEW.job_id, NEW.worker_id, 'accepted')
         ON CONFLICT (job_id, worker_id) DO UPDATE
-        SET status = 'accepted', updated_at = NOW();
+        SET status = 'accepted';
     END IF;
     
     RETURN NEW;

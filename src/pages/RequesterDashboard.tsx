@@ -1863,7 +1863,7 @@ const RequesterDashboard = () => {
                           <Button
                             onClick={() => handleAcceptQuote(quote)}
                             disabled={isAcceptingQuote}
-                            className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-200 font-semibold border-2 border-primary"
+                            className="bg-black hover:bg-black/90 text-white shadow-lg hover:shadow-xl transition-all duration-200 font-semibold border-2 border-black"
                             size="lg"
                           >
                             {isAcceptingQuote ? (
